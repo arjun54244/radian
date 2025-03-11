@@ -24,7 +24,7 @@ class Book extends Model
         'base_price', 
         'discounted_price', 
         'short_description', 
-        'image', 
+        'images', 
         'image_alt_tag', 
         'description', 
         'pages', 
@@ -35,6 +35,9 @@ class Book extends Model
         'meta_title', 
         'meta_description', 
         'canonical_tag'
+    ];
+    protected $casts = [
+        'images' => 'array',
     ];
     public function author()
     {

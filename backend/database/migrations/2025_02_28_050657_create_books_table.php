@@ -31,7 +31,7 @@ return new class extends Migration
             $table->decimal('base_price', 8, 2);
             $table->decimal('discounted_price', 8, 2)->nullable();
             $table->text('short_description')->nullable();
-            $table->string('image')->nullable();
+            $table->json('images')->nullable();
             $table->string('image_alt_tag')->nullable();
             $table->text('description')->nullable();
             $table->integer('pages')->nullable();

@@ -20,6 +20,7 @@ Route::middleware([
 });
 
 Route::get('/authors', [AuthorController::class, 'index'])->name('authors.index');
+Route::get('/books', [BookController::class, 'all'])->name('books.all');
 Route::get('/books/{author}', [BookController::class, 'index'])->name('books.index');
 
 require __DIR__.'/settings.php';

@@ -1,5 +1,7 @@
 # Ignore backend zip file
 backend.zip
+backendV1.zip
+backendV2.zip
 
 # Ignore frontends folder
 

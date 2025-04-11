@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
+            $table->string('post')->nullable();
             $table->text('bio')->nullable();
             $table->timestamps();
         });
